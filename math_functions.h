@@ -96,12 +96,12 @@ float variance_a(int start_i, int stop_i, int* xs, int*ys, int* sigmas){
 	float sx=sa_sigma(start_i,stop_i,sigmas,xs);
 	float stt_d=stt(start_i,stop_i,sigmas,xs);
 	float var_a = (1+sx*sx/(s*stt_d))/s;
-	return var_a;
+	return std::sqrt(var_a);
 }
 float variance_b(int start_i, int stop_i, int* xs, int* sigmas){
 	float stt_d=stt(start_i,stop_i,sigmas,xs);
 	float var_b = 1/stt_d;
-	return var_b;
+	return std::sqrt(var_b);
 }
 
 

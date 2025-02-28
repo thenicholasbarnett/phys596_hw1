@@ -73,6 +73,6 @@ void eventloop(int* xs, int* ys, int* sigmas, int* lasts){
 		// std::cout<<"fist method gives an a value of "<<a0<<" and b value of "<<b0<<" giving a normalized chi^2 of "<<chi0<<std::endl;
 		std::cout<<"a="<<a0<<", b="<<b0<<", chi^2/ndf="<<chi0<<std::endl;
 		// uncertainties in parameter fit values
-		// std::cout<<"the variance of a is "<<avar<<" and of b is "<<bvar<<std::endl;
+		// std::cout<<"the uncertainty of a is "<<avar<<" and of b is "<<bvar<<std::endl;
 	}
 }
